@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <button class="toggle-button">☰</button>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <h1>DeeRNners</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <section class="contact">
+          <h1>Contact Me</h1>
+          <h2>Have You Any Question?</h2>
+          <h4>I'M AT YOUR SERVICE</h4>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <p>Call Us On</p>
+              <p>+2348104110713</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <p>Address</p>
+              <p>Ijegun, Ikotun, Lagos.</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <p>Email</p>
+              <p>oladepoolabisi2001@gmail.com</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <p>Github</p>
+              <p>Olabisitee</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      const toggleButton = document.querySelector(".toggle-button");
+      const sidebar = document.querySelector(".sidebar");
+
+      toggleButton.addEventListener("click", () => {
+        sidebar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

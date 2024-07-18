@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button class="toggle-button">☰</button>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <h1>DeeRNners</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="main-content">
+        <div class="about">
+          <h1>About Me</h1>
+          <h2>
+            I'm Olabisi Taiwo and <span class="highlight">
+              Web Developer
+            </span>
+          </h2>
+          <p id="para">
+            I'm a passionate and a creative frontend developer with a knack for
+            building innovative solutions, bringing ideas to life through code,
+            creating user friendly, responsive and visual websites.
+          </p>
+          <div class="info">
+            <div class="imfo-item"> <strong> Website: </strong> www.domain.com</div>
+            <div class="imfo-item"> <strong> Phone: </strong> 08104110713</div>
+            <div class="imfo-item"> <strong> City: </strong> Lagos</div>
+            <div class="imfo-item"> <strong> Email: </strong> oladepoolabisi2001@gmail.com</div>
+          </div>
+          <div class="button">
+            <a href="#" class="but"> Download CV </a>
+            <a href="#" class="but"> Hire Me </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      const toggleButton = document.querySelector(".toggle-button");
+      const sidebar = document.querySelector(".sidebar");
+
+      toggleButton.addEventListener("click", () => {
+        sidebar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

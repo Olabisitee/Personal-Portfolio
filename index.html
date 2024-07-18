@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button class="toggle-button">☰</button>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <h1>DeeRNners</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <section class="intro">
+          <h1>Hello my name is <span class="name">Olabisi Taiwo</span></h1>
+          <h2>I am a <span class="highlight">Frontend Developer</span></h2>
+          <p>
+            I'm a passionate and a creative frontend developer with a knack for
+            building innovative solutions, bringing ideas to life through code,
+            creating user friendly, responsive and visual websites.
+          </p>
+          <button class="btn">Download CV</button>
+        </section>
+
+        <div class="profile-picture">
+          <img src="assets\profile-pics.png" width="300px" height="300px" />
+        </div>
+      </main>
+    </div>
+    <script>
+      const toggleButton = document.querySelector(".toggle-button");
+      const sidebar = document.querySelector(".sidebar");
+
+      toggleButton.addEventListener("click", () => {
+        sidebar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

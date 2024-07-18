@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <button class="toggle-button">☰</button>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <h1>DeeRNners</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <section class="portfolio">
+          <h1>Portfolio</h1>
+          <h3>My Last Projects :</h3>
+          <div class="projects">
+            <div class="project">
+              <a
+                href="https://body-mind-site-h66p5ouka-adventure-786a3097.vercel.app/"
+              >
+                <img src="assets\Aesthetic (3).png" alt="Project 1" />
+              </a>
+            </div>
+            <div class="project">
+              <a
+                href="https://digital-assets-dd21zbwh9-adventure-786a3097.vercel.app/"
+              >
+                <img src="assets\about-us.png" alt="Project 2" />
+              </a>
+            </div>
+            <div class="project">
+              <a href="https://olabisitee.github.io/Single-page_website/">
+                <img src="assets\Aesthetic (4).png" alt="Project 3" />
+              </a>
+            </div>
+            <div class="project">
+              <a href="https://inkeeper-app.vercel.app/">
+                <img src="assets\about-us.png" alt="Project 4" />
+              </a>
+            </div>
+            <div class="project">
+              <a href="https://timbu-shop-zeta.vercel.app/">
+                <img src="assets\Aesthetic (2).png" alt="Project 5" />
+              </a>
+            </div>
+            <div class="project">
+              <a href="https://travel-landing-page-lemon.vercel.app/">
+                <img src="assets\Beige.png" alt="Project 6" />
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      const toggleButton = document.querySelector(".toggle-button");
+      const sidebar = document.querySelector(".sidebar");
+
+      toggleButton.addEventListener("click", () => {
+        sidebar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
