@@ -94,26 +94,26 @@ nav ul li a:hover {
   .container {
     flex-direction: column;
   }
-
   .sidebar {
     width: 100%;
     display: none;
   }
-
   .sidebar.active {
     display: block;
   }
-
   .toggle-button {
     display: block;
   }
-  .projects .project img {
+  .main-content {
+    margin-left: 0;
     padding: 20px;
   }
-  .portfolio {
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+  .projects .project img {
     padding: 20px;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
   }
 }

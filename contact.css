@@ -94,17 +94,29 @@ nav ul li a:hover {
   .container {
     flex-direction: column;
   }
-
   .sidebar {
     width: 100%;
-    transform: translateX(-100%);
+    display: none;
   }
-
   .sidebar.active {
-    transform: translateX(0);
+    display: block;
   }
-
   .toggle-button {
     display: block;
+  }
+  .main-content {
+    padding: 20px;
+    margin-left: 0;
+  }
+  .contact {
+    padding: 60px 20px;
+  }
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-item {
+    margin-bottom: 20px;
+    width: 100%;
   }
 }
